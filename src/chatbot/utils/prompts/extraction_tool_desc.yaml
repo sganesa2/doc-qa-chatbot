@@ -1,0 +1,1 @@
+description: "Use this tool primarily for extracting structured data from a user's message. Do not use this tool for answering queries or any other task. The tool will retrun a json object with TWO KEYS: 1) 'structured_output': a json object with the extracted structured data, 2) 'current_validation_error': a validation error that needs to be sent to the user, else None."

@@ -1,0 +1,7 @@
+{
+    "dependencies": ["./chatbot", "requirements.txt"],
+    "graphs": {
+      "agent": "./chatbot/agent.py:chatbot_graph"
+    },
+    "env": ".env"
+ }

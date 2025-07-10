@@ -1,0 +1,49 @@
+chatbot_context:
+  schema:
+    $defs:
+      Appointment: null
+      properties:
+        client_name:
+          anyOf:
+            - type: string
+            - type: null
+            - description: Name of potential client. If not present, return None
+              title: Client Name
+        date:
+          anyOf:
+            - type: string
+            - type: null
+            - description: Extract the date of appointment. If not present, return None
+              title: Date
+          time:
+            anyOf:
+              - type: string
+              - type: null
+              - description: Time of appointment. If not present return None
+                title: Time
+          notes:
+            anyOf:
+              - type: string
+              - type: null
+              - description: Any additional notes about the appointment. If not present, return None
+                title: Notes
+          required:
+            - client_name
+            - date
+            - time
+            - notes
+          title: Appointment
+          type: object
+        properties:
+          appointments:
+            anyOf:
+              - items:
+                  $ref: "#/$defs/Appointment"
+                  type: array
+              - type: null
+          description: Extract the list of appointments scheduled with potential clients. If it doesn't exist, return None
+          title: Appointments
+      required:
+        - appointments
+      title: AppointmentSchedulingTask
+      type: object

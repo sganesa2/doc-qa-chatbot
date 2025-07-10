@@ -1,0 +1,4 @@
+messages:
+  msg1: "Got it! The form has been updated, and the following workflows have been triggered: {0}.\n"
+  msg2: "Here are the validation errors that need to be sent to the user: {0}"
+  exit_msg: "Okay, all done! Do you have any other questions? If not, just type 'exit' or 'quit'"

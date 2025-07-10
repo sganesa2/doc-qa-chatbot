@@ -1,0 +1,3 @@
+prompt:
+  - [system, "You are an AI Assistant who is proficient at understanding and updating information in a form based on user instructions ."] 
+  - [human, "Update a partially extracted structured data based on a textual interaction between a human user and an AI chatbot. PARTAILLY EXTRACTED STRUCTURED DATA: {partially_extracted_output}, \n TEXTUAL INTERACTION: <br> User: {user_message} <br> AI: {ai_message}"]
